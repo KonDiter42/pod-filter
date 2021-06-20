@@ -4,11 +4,11 @@
 This preset is recommended for getting your first character ready for farming in Hell difficulty. It's only meant to be used for a short period of time because it displays a lot of items that are only useful during your progression through Normal and Nightmare. But once you're able to farm in Hell, you probably don't want to see them anymore. I would recommend you switch to preset #2 after you are ready to start farming in Hell difficulty.
 
 In the next two sections, I will briefly list:
-- the items that will be [displayed on the ground]() and
-- the items that will also show up in your [chat notifications]().
+- the items that will be [displayed on the ground](https://github.com/wallowlol/pod-filter/tree/main/wallow-1#items-displayed-on-the-ground) and
+- the items that will also show up in your [chat notifications](https://github.com/wallowlol/pod-filter/tree/main/wallow-1#chat-notifications).
 
 ## Items Displayed on the Ground 
-[Back to Top]()
+[Back to Top](https://github.com/wallowlol/pod-filter/tree/main/wallow-1#wallows-loot-filter-for-path-of-diablo---preset-1)
 
 Potions
   - Minor potions will show from 1-10
@@ -172,7 +172,7 @@ White Items
 	-	5 Socket Divine Scepter
 
 ## Chat Notifications
-[Back to Top]()
+[Back to Top](https://github.com/wallowlol/pod-filter/tree/main/wallow-1#wallows-loot-filter-for-path-of-diablo---preset-1)
 
 PoD Items
 - Orb of Corruption
