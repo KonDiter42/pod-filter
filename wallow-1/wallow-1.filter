@@ -1835,11 +1835,11 @@ ItemDisplay[UNI aq2]: %NOTIFY-GOLD%%RED%@ %GOLD%%NAME% %RED%@
 ItemDisplay[UNI cq2]: %NOTIFY-GOLD%%RED%@ %GOLD%%NAME% %RED%@
 
 //----------------------------------------------------------------------------------------------------
-//Show all unid unique items from levels 1-40
+//Show all unid unique items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[UNI !ID !ETH CLVL<41]: %NAME%
-ItemDisplay[UNI !ID ETH CLVL<41]: Eth %NAME%
+ItemDisplay[UNI !ID !ETH CLVL<80]: %NAME%
+ItemDisplay[UNI !ID ETH CLVL<80]: Eth %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all unid unique items not listed above
@@ -2335,10 +2335,10 @@ ItemDisplay[SET !ID amu]: %NOTIFY-GREEN%%PURPLE%@@@ %GREEN%%NAME% %PURPLE%@@@
 ItemDisplay[SET !ID rin]: %NOTIFY-GREEN%%RED%@ %GREEN%%NAME% %RED%@
 
 //----------------------------------------------------------------------------------------------------
-//Show all unid set items from levels 1-40
+//Show all unid set items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[SET !ID CLVL<41]: %NAME%
+ItemDisplay[SET !ID CLVL<80]: %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all unid set items not listed above
