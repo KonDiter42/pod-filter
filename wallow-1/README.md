@@ -26,7 +26,7 @@ Gems
   - Perfect gems will show for all levels
 
 Items
-  - All unidentified unique and set items will show from 1-40
+  - All unidentified unique and set items will show from 1-79
   - Selective rare and magic items will show from 1-79
   - Selective socketed items will show from 1-79
   - All identified unique, set, rare, and magic items will show for all levels
