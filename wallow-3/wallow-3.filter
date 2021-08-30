@@ -2362,11 +2362,11 @@ ItemDisplay[SET !ID]:
 //Show selective unid rare items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[RARE !ID !ETH WEAPON CLVL<79]: %NAME%
-ItemDisplay[RARE !ID ETH WEAPON CLVL<79]: Eth %NAME%
+ItemDisplay[RARE !ID !ETH WEAPON CLVL<80]: %NAME%
+ItemDisplay[RARE !ID ETH WEAPON CLVL<80]: Eth %NAME%
 
-ItemDisplay[RARE !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: %NAME%
-ItemDisplay[RARE !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: Eth %NAME%
+ItemDisplay[RARE !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: %NAME%
+ItemDisplay[RARE !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: Eth %NAME%
 
 ItemDisplay[RARE !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[RARE !ID ETH CLVL<41]: Eth %NAME%
@@ -2428,11 +2428,11 @@ ItemDisplay[(WP3 OR WP5 OR WP6) TABSK34>2]: %NAME% %RED%(+3 Warcries)
 //Show selective unid magic items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[MAG !ID !ETH WEAPON CLVL<79]: %NAME%
-ItemDisplay[MAG !ID ETH WEAPON CLVL<79]: Eth %NAME%
+ItemDisplay[MAG !ID !ETH WEAPON CLVL<80]: %NAME%
+ItemDisplay[MAG !ID ETH WEAPON CLVL<80]: Eth %NAME%
 
-ItemDisplay[MAG !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: %NAME%
-ItemDisplay[MAG !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: Eth %NAME%
+ItemDisplay[MAG !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: %NAME%
+ItemDisplay[MAG !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: Eth %NAME%
 
 ItemDisplay[MAG !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[MAG !ID ETH CLVL<41]: Eth %NAME%
@@ -3361,8 +3361,8 @@ ItemDisplay[NMAG !ETH !RW SOCK=5 9ws]: %NAME% %RED%(%SOCKETS%)
 //Show selective socketed items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<79]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
-ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<79]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<80]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
 
 ItemDisplay[NMAG !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
@@ -3374,15 +3374,15 @@ ItemDisplay[NMAG !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
 //Show all non-socketed druid pelts, barb helms, necro shields, orbs, staves, wands, and scepters from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH CLVL<79]: %NAME% ($%PRICE%)
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH CLVL<79]: Eth %NAME% ($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH CLVL<80]: %NAME% ($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH CLVL<80]: Eth %NAME% ($%PRICE%)
 
 //----------------------------------------------------------------------------------------------------
 //Show white assassin and amazon weapons from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL5 OR CL7) !RW !ETH CLVL<79]: %NAME%
-ItemDisplay[NMAG (CL5 OR CL7) !RW ETH CLVL<79]: Eth %NAME%
+ItemDisplay[NMAG (CL5 OR CL7) !RW !ETH CLVL<80]: %NAME%
+ItemDisplay[NMAG (CL5 OR CL7) !RW ETH CLVL<80]: Eth %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all white items not listed above
