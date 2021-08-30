@@ -36,14 +36,22 @@ ItemDisplay[mp4 CLVL<81]: %BLUE%@%WHITE%MP-4
 //Miscellaneous
 //----------------------------------------------------------------------------------------------------
 
-//ItemDisplay[tsc]: TP
-//ItemDisplay[isc]: ID
-//ItemDisplay[yps]: Antidote
+//ItemDisplay[tsc]: %NAME%
+//ItemDisplay[isc]: %NAME%
+//ItemDisplay[yps]: %NAME%
 //ItemDisplay[wms]: %NAME%
 //ItemDisplay[vps]: %NAME%
-ItemDisplay[tbk]: TP Tome
-ItemDisplay[ibk]: ID Tome
 //ItemDisplay[key]: %NAME%
+
+ItemDisplay[tsc CLVL<11]: %NAME%
+ItemDisplay[isc CLVL<11]: %NAME%
+ItemDisplay[yps CLVL<11]: %NAME%
+ItemDisplay[wms CLVL<11]: %NAME%
+ItemDisplay[vps CLVL<11]: %NAME%
+ItemDisplay[key CLVL<11]: %NAME%
+
+ItemDisplay[tbk]: %NAME%
+ItemDisplay[ibk]: %NAME%
 
 //====================================================================================================
 //Identified Items
@@ -130,7 +138,7 @@ ItemDisplay[RARE CL5 ETH !ID]: %RED%@ %YELLOW%Eth %NAME% %RED%@
 ItemDisplay[RARE CL5 !ETH !ID]: %RED%@ %YELLOW%%NAME% %RED%@
 
 //Crystal Sword, Dimensional Blade, Phase Blade
-//ItemDisplay[RARE (crs OR 9cr OR 7cr) !ETH !ID]: %RED%@ %YELLOW%%NAME% %RED%@
+ItemDisplay[RARE (crs OR 9cr OR 7cr) !ETH !ID]: %RED%@ %YELLOW%%NAME% %RED%@
 //ItemDisplay[RARE (crs OR 9cr OR 7cr) ETH !ID]: %RED%@ %YELLOW%Eth %NAME% %RED%@
 
 //----------------------------------------------------------------------------------------------------
@@ -347,44 +355,44 @@ ItemDisplay[r33]: %NOTIFY-ORANGE%%PURPLE%@@@@@ %ORANGE%%NAME% %PURPLE%@@@@@
 //ItemDisplay[gfg]: %ORANGE%Emerald-2
 //ItemDisplay[gsg]: %ORANGE%Emerald-3
 
-ItemDisplay[skc CLVL<21]: %ORANGE%Skull-1
-ItemDisplay[skf CLVL<31]: %ORANGE%Skull-2
+ItemDisplay[skc CLVL<41]: %ORANGE%Skull-1
+ItemDisplay[skf CLVL<41]: %ORANGE%Skull-2
 ItemDisplay[sku CLVL<41]: %ORANGE%Skull-3
 ItemDisplay[skl]: %NOTIFY-ORANGE%%RED%@@@ %ORANGE%Skull-4 %RED%@@@
 ItemDisplay[skz]: %ORANGE%Skull-5
 
-ItemDisplay[gcv CLVL<21]: %ORANGE%Amethyst-1
-ItemDisplay[gfv CLVL<31]: %ORANGE%Amethyst-2
+ItemDisplay[gcv CLVL<41]: %ORANGE%Amethyst-1
+ItemDisplay[gfv CLVL<41]: %ORANGE%Amethyst-2
 ItemDisplay[gsv CLVL<41]: %ORANGE%Amethyst-3
 ItemDisplay[gzv]: %ORANGE%Amethyst-4
 ItemDisplay[gpv]: %ORANGE%Amethyst-5
 
-ItemDisplay[gcw CLVL<21]: %ORANGE%Diamond-1
-ItemDisplay[gfw CLVL<31]: %ORANGE%Diamond-2
+ItemDisplay[gcw CLVL<41]: %ORANGE%Diamond-1
+ItemDisplay[gfw CLVL<41]: %ORANGE%Diamond-2
 ItemDisplay[gsw CLVL<41]: %ORANGE%Diamond-3
 ItemDisplay[glw]: %ORANGE%Diamond-4
 ItemDisplay[gpw]: %ORANGE%Diamond-5
 
-ItemDisplay[gcy CLVL<21]: %ORANGE%Topaz-1
-ItemDisplay[gfy CLVL<31]: %ORANGE%Topaz-2
+ItemDisplay[gcy CLVL<41]: %ORANGE%Topaz-1
+ItemDisplay[gfy CLVL<41]: %ORANGE%Topaz-2
 ItemDisplay[gsy CLVL<41]: %ORANGE%Topaz-3
 ItemDisplay[gly]: %ORANGE%Topaz-4
 ItemDisplay[gpy]: %ORANGE%Topaz-5
 
-ItemDisplay[gcr CLVL<21]: %ORANGE%Ruby-1
-ItemDisplay[gfr CLVL<31]: %ORANGE%Ruby-2
+ItemDisplay[gcr CLVL<41]: %ORANGE%Ruby-1
+ItemDisplay[gfr CLVL<41]: %ORANGE%Ruby-2
 ItemDisplay[gsr CLVL<41]: %ORANGE%Ruby-3
 ItemDisplay[glr]: %ORANGE%Ruby-4
 ItemDisplay[gpr]: %ORANGE%Ruby-5
 
-ItemDisplay[gcb CLVL<21]: %ORANGE%Sapphire-1
-ItemDisplay[gfb CLVL<31]: %ORANGE%Sapphire-2
+ItemDisplay[gcb CLVL<41]: %ORANGE%Sapphire-1
+ItemDisplay[gfb CLVL<41]: %ORANGE%Sapphire-2
 ItemDisplay[gsb CLVL<41]: %ORANGE%Sapphire-3
 ItemDisplay[glb]: %ORANGE%Sapphire-4
 ItemDisplay[gpb]: %ORANGE%Sapphire-5
 
-ItemDisplay[gcg CLVL<21]: %ORANGE%Emerald-1
-ItemDisplay[gfg CLVL<31]: %ORANGE%Emerald-2
+ItemDisplay[gcg CLVL<41]: %ORANGE%Emerald-1
+ItemDisplay[gfg CLVL<41]: %ORANGE%Emerald-2
 ItemDisplay[gsg CLVL<41]: %ORANGE%Emerald-3
 ItemDisplay[glg]: %ORANGE%Emerald-4
 ItemDisplay[gpg]: %ORANGE%Emerald-5
@@ -2351,8 +2359,14 @@ ItemDisplay[SET !ID]:
 //ItemDisplay[RARE (rxb OR 8rx OR 6rx) !ID]: %RED%@ %YELLOW%%NAME% %RED%@
 
 //----------------------------------------------------------------------------------------------------
-//Show all unid rare items from levels 1-40
+//Show selective unid rare items from levels 1-79
 //----------------------------------------------------------------------------------------------------
+
+ItemDisplay[RARE !ID !ETH WEAPON CLVL<79]: %NAME%
+ItemDisplay[RARE !ID ETH WEAPON CLVL<79]: Eth %NAME%
+
+ItemDisplay[RARE !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: %NAME%
+ItemDisplay[RARE !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: Eth %NAME%
 
 ItemDisplay[RARE !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[RARE !ID ETH CLVL<41]: Eth %NAME%
@@ -2411,8 +2425,14 @@ ItemDisplay[(WP3 OR WP5 OR WP6) TABSK34>2]: %NAME% %RED%(+3 Warcries)
 //ItemDisplay[MAG (hlm OR xlm OR ulm) ILVL>82]: %NAME% %RED%(%ILVL%)
 
 //----------------------------------------------------------------------------------------------------
-//Show all unid magic items from levels 1-40
+//Show selective unid magic items from levels 1-79
 //----------------------------------------------------------------------------------------------------
+
+ItemDisplay[MAG !ID !ETH WEAPON CLVL<79]: %NAME%
+ItemDisplay[MAG !ID ETH WEAPON CLVL<79]: Eth %NAME%
+
+ItemDisplay[MAG !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: %NAME%
+ItemDisplay[MAG !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<79]: Eth %NAME%
 
 ItemDisplay[MAG !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[MAG !ID ETH CLVL<41]: Eth %NAME%
@@ -2658,11 +2678,11 @@ ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) ETH (SOCK=0 OR SOCK=3 
 
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK121=3]: %NOTIFY-GRAY%%NAME% %RED%(%SOCKETS%) %RED%(+3 Fist of the Heavens)
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK117>2]: %NOTIFY-GRAY%%NAME% %RED%(%SOCKETS%) %RED%(+3 Holy Shield)
-ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK118>2]: %NOTIFY-GRAY%%NAME% %RED%(%SOCKETS%) %RED%(+3 Holy Shock)
+ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK118>2]: %NAME% %RED%(%SOCKETS%) %RED%(+3 Holy Shock)
 
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH SOCK=0 SK121=3]: %NOTIFY-WHITE%%NAME% %RED%(+3 Fist of the Heavens)
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH SOCK=0 SK117>2]: %NOTIFY-WHITE%%NAME% %RED%(+3 Holy Shield)
-ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH SOCK=0 SK118>2]: %NOTIFY-WHITE%%NAME% %RED%(+3 Holy Shock)
+ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH SOCK=0 SK118>2]: %NAME% %RED%(+3 Holy Shock)
 
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK102=3]: %NAME% %RED%(%SOCKETS%) %RED%(+3 Holy Fire)
 ItemDisplay[NMAG (gsc OR wsp OR 9qs OR 9ws OR 7qs OR 7ws) !ETH (SOCK=3 OR SOCK=4 OR SOCK=5) SK119>2]: %NAME% %RED%(%SOCKETS%) %RED%(+3 Sanctuary)
@@ -3338,11 +3358,31 @@ ItemDisplay[NMAG !ETH !RW SOCK=5 ED=5 9ws]: %NAME% %RED%(%SOCKETS%) %RED%(+5%)
 ItemDisplay[NMAG !ETH !RW SOCK=5 9ws]: %NAME% %RED%(%SOCKETS%)
 
 //----------------------------------------------------------------------------------------------------
-//Show all socketed items from levels 1-40
+//Show selective socketed items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG !RW !ETH SOCK>0 CLVL<41]: %NAME% %RED%(%SOCKETS%)
-ItemDisplay[NMAG !RW ETH SOCK>0 CLVL<41]: Eth %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<79]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<79]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+
+ItemDisplay[NMAG !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
+
+ItemDisplay[NMAG !RW !ETH SOCK>0 CLVL<21]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
+
+//----------------------------------------------------------------------------------------------------
+//Show all non-socketed druid pelts, barb helms, necro shields, orbs, staves, wands, and scepters from levels 1-79
+//----------------------------------------------------------------------------------------------------
+
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH CLVL<79]: %NAME% ($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH CLVL<79]: Eth %NAME% ($%PRICE%)
+
+//----------------------------------------------------------------------------------------------------
+//Show white assassin and amazon weapons from levels 1-79
+//----------------------------------------------------------------------------------------------------
+
+ItemDisplay[NMAG (CL5 OR CL7) !RW !ETH CLVL<79]: %NAME%
+ItemDisplay[NMAG (CL5 OR CL7) !RW ETH CLVL<79]: Eth %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all white items not listed above
