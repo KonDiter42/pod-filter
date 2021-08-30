@@ -2486,8 +2486,8 @@ ItemDisplay[NMAG !ETH !RW SOCK=3 SUP ITEMSTAT91=-8 (brs OR ltp OR xtp)]: %NAME% 
 ItemDisplay[NMAG !ETH !RW SOCK=3 SUP ITEMSTAT91=-7 (brs OR ltp OR xtp)]: %NAME% %RED%(%SOCKETS%) %RED%(-7%)
 ItemDisplay[NMAG !ETH !RW SOCK=3 SUP ITEMSTAT91=-6 (brs OR ltp OR xtp)]: %NAME% %RED%(%SOCKETS%) %RED%(-6%)
 ItemDisplay[NMAG !ETH !RW SOCK=3 SUP ITEMSTAT91=-5 (brs OR ltp OR xtp)]: %NAME% %RED%(%SOCKETS%) %RED%(-5%)
-ItemDisplay[NMAG !ETH !RW SOCK=3 ED=15 (brs OR ltp OR xtp)]: %NAME% %RED%(%SOCKETS%) %RED%(+15%)
-ItemDisplay[NMAG !ETH !RW SOCK=0 ED=15 (ltp OR xtp)]: %NAME% %RED%(+15%)
+ItemDisplay[NMAG !ETH !RW SOCK=3 ED=15 (brs OR ltp OR xtp)]: %NOTIFY-GRAY%%NAME% %RED%(%SOCKETS%) %RED%(+15%)
+ItemDisplay[NMAG !ETH !RW SOCK=0 ED=15 (ltp OR xtp)]: %NOTIFY-WHITE%%NAME% %RED%(+15%)
 ItemDisplay[NMAG !ETH !RW SOCK=3 (brs OR ltp OR xtp)]: %NAME% %RED%(%SOCKETS%)
 
 //Gothic Plate
