@@ -3361,8 +3361,8 @@ ItemDisplay[NMAG !ETH !RW SOCK=5 9ws]: %NAME% %RED%(%SOCKETS%)
 //Show selective socketed items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<79]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<79]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<79]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<79]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
 
 ItemDisplay[NMAG !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
@@ -3376,6 +3376,13 @@ ItemDisplay[NMAG !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
 
 ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH CLVL<79]: %NAME% ($%PRICE%)
 ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH CLVL<79]: Eth %NAME% ($%PRICE%)
+
+//----------------------------------------------------------------------------------------------------
+//Show white assassin and amazon weapons from levels 1-79
+//----------------------------------------------------------------------------------------------------
+
+ItemDisplay[NMAG (CL5 OR CL7) !RW !ETH CLVL<79]: %NAME%
+ItemDisplay[NMAG (CL5 OR CL7) !RW ETH CLVL<79]: Eth %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all white items not listed above
