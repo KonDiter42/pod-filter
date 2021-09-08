@@ -104,6 +104,9 @@ ItemDisplay[MAG !ID !ETH (ci0 OR ci1)]: %NOTIFY-BLUE%%RED%@ %BLUE%%NAME% %RED%@
 ItemDisplay[MAG (am5 OR ama OR amf) ETH !ID]: %RED%@ %BLUE%Eth %NAME% %RED%@
 ItemDisplay[MAG (am5 OR ama OR amf) !ETH !ID]: %RED%@ %BLUE%%NAME% %RED%@
 
+//Phase Blade
+ItemDisplay[MAG 7cr !ETH !ID]: %NAME%
+
 //----------------------------------------------------------------------------------------------------
 //Rares
 //----------------------------------------------------------------------------------------------------
@@ -2362,12 +2365,15 @@ ItemDisplay[SET !ID]:
 //Show selective unid rare items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
+//All rare weapons from levels 1-79
 ItemDisplay[RARE !ID !ETH WEAPON CLVL<80]: %NAME%
 ItemDisplay[RARE !ID ETH WEAPON CLVL<80]: Eth %NAME%
 
+//All rare class-specific items from levels 1-79
 ItemDisplay[RARE !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: %NAME%
 ItemDisplay[RARE !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: Eth %NAME%
 
+//All rare items from levels 1-40
 ItemDisplay[RARE !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[RARE !ID ETH CLVL<41]: Eth %NAME%
 
@@ -2428,12 +2434,18 @@ ItemDisplay[(WP3 OR WP5 OR WP6) TABSK34>2]: %NAME% %RED%(+3 Warcries)
 //Show selective unid magic items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
+//All magic weapons from levels 1-79
 ItemDisplay[MAG !ID !ETH WEAPON CLVL<80]: %NAME%
 ItemDisplay[MAG !ID ETH WEAPON CLVL<80]: Eth %NAME%
 
+//All magic class-specific items from levels 1-79
 ItemDisplay[MAG !ID !ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: %NAME%
 ItemDisplay[MAG !ID ETH (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7) CLVL<80]: Eth %NAME%
 
+//Amulets and rings from levels 1-79
+ItemDisplay[MAG (amu OR rin) CLVL<80]: %NAME%
+
+//All magic items from levels 1-40
 ItemDisplay[MAG !ID !ETH CLVL<41]: %NAME%
 ItemDisplay[MAG !ID ETH CLVL<41]: Eth %NAME%
 
@@ -3358,31 +3370,56 @@ ItemDisplay[NMAG !ETH !RW SOCK=5 ED=5 9ws]: %NAME% %RED%(%SOCKETS%) %RED%(+5%)
 ItemDisplay[NMAG !ETH !RW SOCK=5 9ws]: %NAME% %RED%(%SOCKETS%)
 
 //----------------------------------------------------------------------------------------------------
-//Show selective socketed items from levels 1-79
+//Show selective socketed and white items from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<80]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
-ItemDisplay[NMAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+//Druid pelts, barb helms, necro shields, orbs, staves, wands, and scepters to potentially sell for gold from levels 1-79
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK>0 CLVL<80]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK>0 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH SOCK=0 CLVL<80]: %NAME% ($%PRICE%)
+ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH SOCK=0 CLVL<80]: Eth %NAME% ($%PRICE%)
 
+//Assassin claws that are able to spawn skills to potentially sell for gold from levels 1-79
+ItemDisplay[NMAG (9cs OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7xf OR 7cs OR 7lw OR 7tw OR 7qr) !RW !ETH SOCK>0 CLVL<80]: %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (9cs OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7xf OR 7cs OR 7lw OR 7tw OR 7qr) !RW ETH SOCK>0 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%) %WHITE%($%PRICE%)
+ItemDisplay[NMAG (9cs OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7xf OR 7cs OR 7lw OR 7tw OR 7qr) !RW !ETH SOCK=0 CLVL<80]: %NAME% ($%PRICE%)
+ItemDisplay[NMAG (9cs OR 9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7xf OR 7cs OR 7lw OR 7tw OR 7qr) !RW ETH SOCK=0 CLVL<80]: Eth %NAME% ($%PRICE%)
+
+//Show items that have 2 or more sockets from levels 1-79
+ItemDisplay[NMAG WEAPON !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG WEAPON !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG ARMOR !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG ARMOR !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG (CL3 OR CL5 OR CL7) !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG (CL3 OR CL5 OR CL7) !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW !ETH SOCK>1 CLVL<80]: %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW ETH SOCK>1 CLVL<80]: Eth %NAME% %RED%(%SOCKETS%)
 
+//Show items that have 1 or more sockets from levels 1-20
+ItemDisplay[NMAG WEAPON !RW !ETH SOCK>0 CLVL<21]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG WEAPON !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG ARMOR !RW !ETH SOCK>0 CLVL<21]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG ARMOR !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG (CL3 OR CL5 OR CL7) !RW !ETH SOCK>0 CLVL<21]: %NAME% %RED%(%SOCKETS%)
+ItemDisplay[NMAG (CL3 OR CL5 OR CL7) !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW !ETH SOCK>0 CLVL<21]: %NAME% %RED%(%SOCKETS%)
 ItemDisplay[NMAG !RW ETH SOCK>0 CLVL<21]: Eth %NAME% %RED%(%SOCKETS%)
 
 //----------------------------------------------------------------------------------------------------
-//Show all non-socketed druid pelts, barb helms, necro shields, orbs, staves, wands, and scepters from levels 1-79
+//Show javelin and throwing weapons from levels 1-79
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW !ETH CLVL<80]: %NAME% ($%PRICE%)
-ItemDisplay[NMAG (CL1 OR CL2 OR CL4 OR CL6 OR WP11 OR WP12 OR WP13) !RW ETH CLVL<80]: Eth %NAME% ($%PRICE%)
+//Amazon javelins
+ItemDisplay[NMAG (am5 OR ama OR amf) !RW !ETH CLVL<80]: %NAME%
+ItemDisplay[NMAG (am5 OR ama OR amf) !RW ETH CLVL<80]: Eth %NAME%
 
-//----------------------------------------------------------------------------------------------------
-//Show white assassin and amazon weapons from levels 1-79
-//----------------------------------------------------------------------------------------------------
+//Regular javelins
+ItemDisplay[NMAG WP6 !RW !ETH CLVL<80]: %NAME%
+ItemDisplay[NMAG WP6 !RW ETH CLVL<80]: Eth %NAME%
 
-ItemDisplay[NMAG (CL5 OR CL7) !RW !ETH CLVL<80]: %NAME%
-ItemDisplay[NMAG (CL5 OR CL7) !RW ETH CLVL<80]: Eth %NAME%
+//Throwing weapons
+ItemDisplay[NMAG WP5 !RW !ETH CLVL<80]: %NAME%
+ItemDisplay[NMAG WP5 !RW ETH CLVL<80]: Eth %NAME%
 
 //----------------------------------------------------------------------------------------------------
 //Hide all white items not listed above
