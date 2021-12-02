@@ -3,10 +3,6 @@
 ## Overview
 A loot filter that tries to keep the original Diablo II style while displaying useful details.
 
-I made a video of me talking about this loot filter. Click the link below if you want to check it out.
-
-https://www.youtube.com/watch?v=WNA15ESXyHo
-
 ## Sample Screenshots
 ![ground](https://user-images.githubusercontent.com/81270285/122657624-4d93c800-d133-11eb-9a52-5209e18f0e46.png)
 ![chat](https://user-images.githubusercontent.com/81270285/122657628-54223f80-d133-11eb-86f9-670d69cc5952.png)
